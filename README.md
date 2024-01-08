@@ -1,33 +1,29 @@
-# Java Reflection (Meta-programação)
+# Java Multithreading, Concurrency & Performance Optimization
 
-## O que é Java Reflection?
-É uma linguagem e uma feature da JVM que prove para nós uma forma
-de acessar informações sobre nossa aplicação (classes e objetos)
-em tempo de execução (runtime).
-https://codegym.cc/pt/groups/posts/pt.45.api-de-reflexao-reflexao-o-lado-obscuro-de-java
+# Introdução
+## Porque precisamos de Threads ?
+- Capacidade de resposta
+- Performance
 
-## O que podemos fazer com o Java Reflections?
-* Escrever códigos mais flexíveis que:
-    * Conectam diferentes componentes em tempo de execução;
-    * Criar fluxos sem nenhuma modificação no código-fonte.
-* Escrever algoritmos que dinamicamente se adaptam e mudam seu comportamento baseado nos tipos de objetos e classes que estão trabalhando;
-*	Mais flexibilidade para analisar objetos e classes de uma aplicação em tempo de execução;
-* Podemos criar estruturas poderosas como:
-    * Frameworks;
-    * Bibliotecas;
-    * Designs de software.
+##### **Capacidade de resposta**
+Exemplos de baixa capacidade de resposta
+- Aguardar por uma resposta de cliente
+- Resposta atrasada para uma solicitação
+- Aplicações sem feedback
 
-## Quais tecnologias utilizam Java Reflections?
-*	JUnit: framework para teste unitário em projetos Java;
-* JSON Serialization/Deserialization;
-    * Jackson;
-    * Gson.
-* Injeção de dependência (ID):
-    * Spring Boot;
-    * Google Guice.
-*	Logging frameworks;
-*	Ferramentas de ORM (Object-relational Mapping);
-*	Web Frameworks (Ex: Spring Boot);
-*	Ferramentas de desenvolvimento;
-*	Entre outros…
+Com multithreading conseguimos atender diversas requisições simultaneamente
+distribuindo essas requisições em threads diferentes.
+Para multiplas tarefas ocorrendo em paralelo, podemos utilizar multiplos threads, um
+para cada tarefa.Para alcançar isso Não é necessário multiplos core, conseguimos apenas com um.
 
+##### **Performance**
+Podemos criar a ilusão de multiplas tarefas acontecendo em paralelo utilizando apenas um core do processador.
+Com múltiplos cores podemos executar tarefas tarefas completamente em paralelo.
+
+Impactos positivos de uma alta performance
+- Completar tarefas com velocidade
+- Finalizar várias tarefas no mesmo período
+- Escalar serviços
+  * Menor quantidade de máquinas
+  * Menor custo de hardware
+  * Melhorar custo/benefício de infraestrutura
